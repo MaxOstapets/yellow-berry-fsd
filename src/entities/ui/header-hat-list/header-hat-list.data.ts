@@ -1,0 +1,1 @@
+export const data = ["Hepl?", "Track Order", "Language", "Currency"]

@@ -1,0 +1,20 @@
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.locationInput {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    color: var(--black);
+}
+
+.locationInput:focus {
+    outline: none;
+}

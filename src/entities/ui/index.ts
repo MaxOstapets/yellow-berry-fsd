@@ -1,1 +1,6 @@
-export { ProcessesList } from "./processes-list"
+export { HeaderProcessesList } from "./header-processes-list"
+export { HeaderBottomList } from "./header-bottom-list"
+export { HeaderLocationSearch } from "./header-location-search"
+export { HeaderHatList } from "./header-hat-list"
+export { HeaderSpecieSearch } from "./header-specie-search"
+export { HeaderLogo } from "./header-logo"

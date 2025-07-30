@@ -1,2 +1,1 @@
-export { HeaderProcessesItem } from "./header-processes-item"
 export { HeaderBottomListItem } from "./header-bottom-list-item"

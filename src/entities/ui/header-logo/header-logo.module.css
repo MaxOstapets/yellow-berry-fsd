@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+
+.yellow {
+    color: var(--yellow);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.berry {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logoIcon {
+    width: 60px;
+    height: 65px;
+}

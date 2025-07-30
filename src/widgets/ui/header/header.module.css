@@ -18,92 +18,12 @@
     padding: 20px 180px;
 }
 
-.hatList {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
 .processes {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 120px;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--font-primary);
-}
-
-.yellow {
-    color: var(--yellow);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.berry {
-    color: var(--black);
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.logoIcon {
-    width: 60px;
-    height: 65px;
-}
-
-.vegetables {
-    width: fit-content;
-    border: 2px solid var(--primary);
-    height: 50px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-}
-
-.specie {
-    font-family: var(--font-secondary);
-    font-size: 16px;
-    display: flex;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary);
-    border-right: 2px solid var(--primary);
-    height: 50px;
-    width: 100px;
-}
-
-.product {
-    font-family: var(--font-secondary);
-    font-size: 16px;
-    color: var(--primary);
-    width: 500px;
-    border: none;
-    background: none;
-    padding: 0 10px;
-}
-
-
-.product:focus {
-    outline: none;
-}
-
-.search {
-    width: 20px;
-    height: 20px;
-    padding: 2px;
 }
 
 .bottom {
@@ -117,39 +37,4 @@
     display: flex;
     align-items: center;
     gap: 50px;
-}
-
-.bottomList {
-    display: flex;
-    gap: 20px;
-    color: var(--primary);
-    font-size: 16px;
-    list-style: none;
-}
-
-.bottomListItem {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-}
-
-.locationInput {
-    width: 180px;
-    height: 50px;
-    border: none;
-    background: none;
-    font-size: 14px;
-    font-family: var(--font-secondary);
-    color: var(--black);
-}
-
-.locationInput:focus {
-    outline: none;
 }

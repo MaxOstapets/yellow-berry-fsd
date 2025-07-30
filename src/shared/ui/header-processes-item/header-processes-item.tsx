@@ -1,4 +1,4 @@
-import styles from "./processes-item.module.css"
+import styles from "./header-processes-item.module.css"
 
 interface IProcessesItem {
     src: string,
@@ -9,7 +9,7 @@ interface IProcessesItem {
     alt: string
 }
 
-export const ProcessesItem: React.FC<IProcessesItem> = ({ src, upLine, bottomLine, count, number, alt }) => {
+export const HeaderProcessesItem: React.FC<IProcessesItem> = ({ src, upLine, bottomLine, count, number, alt }) => {
     return (
         <div className={styles.item}>
             <img src={src} alt={alt} className={styles.listIcon} />

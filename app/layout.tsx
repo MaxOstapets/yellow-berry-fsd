@@ -1,5 +1,5 @@
 import "../src/app/globals.css"
-import { Header } from "@/widgets/ui";
+import { Header, Footer } from "@/widgets/ui";
 
 export default function RootLayout({
   children,
@@ -11,6 +11,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

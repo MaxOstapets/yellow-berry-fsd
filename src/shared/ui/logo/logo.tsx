@@ -1,6 +1,6 @@
-import styles from "./header-logo.module.css"
+import styles from "./logo.module.css"
 
-export const HeaderLogo = () => {
+export const Logo = () => {
     return (
         <div className={styles.logo}>
             <img src="./images/logo.png" alt="logo" className={styles.logoIcon} />

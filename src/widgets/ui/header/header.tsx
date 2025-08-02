@@ -1,5 +1,6 @@
 import styles from "./header.module.css"
-import { HeaderProcessesList, HeaderBottomList, HeaderLocationSearch, HeaderHatList, HeaderSpecieSearch, HeaderLogo } from "@/entities/ui"
+import { HeaderProcessesList, HeaderBottomList, HeaderLocationSearch, HeaderHatList, HeaderSpecieSearch } from "@/entities/ui"
+import { Logo } from "@/shared/ui"
 
 export const Header = () => {
     return (
@@ -9,7 +10,7 @@ export const Header = () => {
                 <HeaderHatList />
             </section>
             <section className={styles.processes}>
-                <HeaderLogo />
+                <Logo />
                 <HeaderSpecieSearch />
                 <HeaderProcessesList />
             </section>

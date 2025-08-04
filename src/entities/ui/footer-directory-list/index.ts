@@ -1,0 +1,1 @@
+export { FooterDirectoryList } from "./footer-directory-list"

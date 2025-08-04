@@ -1,1 +1,1 @@
-export const data = ["Hepl?", "Track Order", "Language", "Currency"]
+export const data = ["Help?", "Track Order", "Language", "Currency"]

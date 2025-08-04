@@ -1,47 +1,34 @@
 import styles from "./footer.module.css"
-import { brandsDirectory, columns } from "./footer.data"
-import { Logo } from "@/shared/ui"
-import { FooterColumn } from "@/entities/ui"
+import { brandsDirectory, columns, downloadButtons } from "./footer.data"
+import { Logo, DownloadButton } from "@/shared/ui"
+import { FooterColumn, FooterDirectoryList } from "@/entities/ui"
 
 export const Footer = () => {
     return (
-        <footer>
-            <section>
-                <span>Brands Directory</span>
-                <div>
-                    {brandsDirectory.map((el) =>
-                        <div>
-                            <p>{el.title}:</p>
-                            <ul>
-                                {el.items.map((el) => <li>{el}</li>)}
-                            </ul>
-                        </div>
-                    )}
+        <footer className={styles.footer}>
+            <section className={styles.brandsDirectories}>
+                <span className={styles.directoriesTitle}>Brands Directory</span>
+                <div className={styles.directories}>
+                    {brandsDirectory.map((el) => <FooterDirectoryList key={el.title} title={el.title} item={el.items} />)}
                 </div>
             </section>
-            <section>
-                <div>
+            <section className={styles.middleSection}>
+                <div className={styles.download}>
                     <Logo />
-                    <span>BlueBerry is the biggest market of grocery products. Get your daily needs from our store.</span>
-                    <div>
-                        <button>
-                            <img src="./images/googlePlay.svg" alt="google play" />
-                            <div>
-                                <span>Get it on</span>
-                                <p>Google Play</p>
-                            </div>
-                        </button>
-                        <button>
-                            <img src="./images/appleStore.svg" alt="google play" />
-                            <div>
-                                <span>Get it on</span>
-                                <p>Apple Store</p>
-                            </div>
-                        </button>
+                    <span className={styles.descriptor}>BlueBerry is the biggest market of grocery products. Get your daily needs from our store.</span>
+                    <div className={styles.buttons}>
+                        {downloadButtons.map((el) => <DownloadButton key={el.app} app={el.app} src={el.src} />)}
                     </div>
                 </div>
-                <div>
+                <div className={styles.columns}>
                     {columns.map((el) => <FooterColumn item={el.items} title={el.title} key={el.title} />)}
+                </div>
+            </section>
+            <section className={styles.bottomSection}>
+                <span className={styles.copyright}>Copyright © 2024 <p className={styles.company}>Yellow Berry</p> all rights reserved</span>
+                <div className={styles.rightSide}>
+                    <img src="./images/payment.png" alt="payment" />
+                    <img src="./images/scrollUpArrow.png" alt="scroll up" />
                 </div>
             </section>
         </footer>

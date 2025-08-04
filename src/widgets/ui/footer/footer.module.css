@@ -1,0 +1,95 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    border-top: 1px solid var(--primary-light);
+    gap: 30px;
+}
+
+.brandsDirectories {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.directoriesTitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.directories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+}
+
+.middleSection {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 28px 0;
+    width: 100%;
+    gap: 60px;
+    border-top: 1px solid var(--primary-light);
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px
+}
+
+.descriptor {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    line-height: 26px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.columns {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    border-top: 1px solid var(--primary-light);
+}
+
+.copyright {
+    font-size: 18px;
+    font-family: var(--font-primary);
+    color: var(--black);
+    display: flex;
+    gap: 6px;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}

@@ -2,7 +2,9 @@
 
 :root {
   /* color pallete */
-  --primary: #1B3C53;
+  --primary: #3D4650;
+  --primary-light: rgba(61, 70, 80, 0.3);
+  --primary-dark: rgb(40, 47, 54);
   --yellow: #FFB823;
   --white: #F7F7F7;
   --black: #040303;
@@ -17,6 +19,10 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--white);
+}
+
+.section {
+  padding: 40px 0;
 }
 
 * {

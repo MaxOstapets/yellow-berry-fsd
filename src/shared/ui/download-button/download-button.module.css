@@ -1,0 +1,41 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-family: var(--font-primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.button:hover {
+    scale: 1.07;
+    cursor: pointer;
+}
+
+.button:active {
+    background: var(--primary-dark);
+}
+
+.src {
+    width: 30px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.span {
+    font-size: 14px;
+}
+
+.app {
+    font-size: 16px;
+    font-weight: 700;
+}

@@ -7,7 +7,7 @@ interface IList {
 
 export const HeaderBottomListItem: React.FC<IList> = ({ core, src }) => {
     return (
-        src ?
+        !src ?
             <li className={styles.bottomListItem}>{core}</li>
             :
             <li className={styles.bottomListItem}>

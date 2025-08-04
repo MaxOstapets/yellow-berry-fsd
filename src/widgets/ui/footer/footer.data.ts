@@ -11,10 +11,15 @@ interface IColumns {
     socialMedias?: string[]
 }
 
+interface IDownloadButtons {
+    src: string,
+    app: string
+}
+
 export const brandsDirectory: IBrandsDirectory[] = [
     {
         title: "Jewellery",
-        items: ["Necklace", "Earrings", "Couple Rings", "Pendants", "Crystal", "Bangles", "Bracelets", "Nose Pin", "Chain Earrings", "Couple Rings"]
+        items: ["Necklace", "Earrings", "Couple Rings", "Pendants", "Crystal", "Bangles", "Bracelets", "Nose Pin", "Chain Earrings"]
     },
     {
         title: "Fashion",
@@ -26,7 +31,7 @@ export const brandsDirectory: IBrandsDirectory[] = [
     },
     {
         title: "Cosmetics",
-        items: ["Shampoo", "Body Wash", "Face Wash", "Makeup Kit", "Liner", "Lipstick", "Perfume", "Body Shop", "Scrub", "Hair Gel", "Hair Colors", "Hair Dye", "Sunscreen", "Skin Lotion", "Liner", "Lipstick"]
+        items: ["Shampoo", "Body Wash", "Face Wash", "Makeup Kit", "Liner", "Lipstick", "Perfume", "Body Shop", "Scrub", "Hair Gel", "Hair Colors", "Hair Dye", "Sunscreen", "Skin Lotion"]
     }
 ]
 
@@ -63,6 +68,18 @@ export const columns: IColumns[] = [
                 core: "yellowBerry@gmail.com"
             },
         ],
-        socialMedias: ["./images/facebook.png", "./images/instagram.png", "./images/twitter.png", "./images/inIcon.png"]
     }
+]
+
+export const socialMedias = ["./images/facebook.png", "./images/instagram.png", "./images/twitter.png", "./images/inIcon.png"]
+
+export const downloadButtons: IDownloadButtons[] = [
+    {
+        src: "./images/googlePlay.svg",
+        app: "Google Play"
+    },
+    {
+        src: "./images/appleStore.svg",
+        app: "Apple Store"
+    },
 ]

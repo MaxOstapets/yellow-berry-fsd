@@ -1,0 +1,18 @@
+.button {
+    font-size: 16px;
+    font-family: var(--font-primary);
+    color: var(--primary);
+    font-weight: 500;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+
+.button:active {
+    background: var(--primary);
+    color: var(--white);
+    scale: 1.1;
+}

@@ -1,6 +1,7 @@
 import styles from "./home.module.css"
-import { ShopButton } from "@/shared/ui"
+import { ShopButton, ProductCard } from "@/shared/ui"
 import { CategoriesList } from "@/entities/ui"
+import { deals } from "./home.data"
 
 export const HomePage = () => {
     return (
@@ -21,6 +22,39 @@ export const HomePage = () => {
                     <span className={styles.categoryDiscount}>50% Off</span>
                 </div>
                 <CategoriesList />
+            </section>
+            <section className={styles.deals}>
+                <div className={styles.dealsHat}>
+                    <div className={styles.title}>
+                        <span className={styles.mainText}>Day of the <p className={styles.individualText}>Deal</p></span>
+                        <p className={styles.secondaryText}>Don't wait. The time will never be just right.</p>
+                    </div>
+                    <div className={styles.timer}>
+                        <span>28 days</span>
+                        <span>3 h</span>
+                        <span>:</span>
+                        <span>25 min</span>
+                        <span>:</span>
+                        <span>10 s</span>
+                    </div>
+                </div>
+                <div className={styles.cards}>
+                    {deals.map((el) =>
+                        <ProductCard
+                            title={el.title}
+                            specie={el.specie}
+                            freshness={el.freshness}
+                            discount={el.discount}
+                            oldPrice={el.oldPrice}
+                            newPrice={el.newPrice}
+                            src={el.src}
+                            unit={el.unit}
+                            measurement={el.measurement}
+                            key={el.title}
+                            price={el.price}
+                        />
+                    )}
+                </div>
             </section>
         </main>
     )

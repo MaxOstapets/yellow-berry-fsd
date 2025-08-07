@@ -86,46 +86,12 @@
     width: 100%;
 }
 
-.title {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: 4px;
-    color: var(--primary);
-}
-
-.mainText {
-    font-family: var(--font-primary);
-    font-size: 30px;
-    font-weight: 600;
-    display: flex;
-    gap: 7px;
-}
-
-.individualText {
-    color: var(--blue);
-}
-
-.secondaryText {
-    font-family: var(--font-secondary);
-    font-weight: 300;
-}
-
-.timer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-family: var(--font-secondary);
-    font-size: 16px;
-    font-weight: 700;
-    padding: 10px 20px;
-    border: 1px solid var(--primary-light);
-    border-radius: 10px;
-    color: var(--primary);
-}
-
 .cards {
     display: flex;
     gap: 20px;
+}
+
+.special {
+    display: flex;
+    gap: 50px;
 }

@@ -1,0 +1,13 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+    color: var(--primary);
+}

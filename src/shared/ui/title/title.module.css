@@ -1,0 +1,24 @@
+.title {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--primary);
+}
+
+.mainText {
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    gap: 7px;
+}
+
+.individualText {
+    color: var(--blue);
+}
+
+.secondaryText {
+    font-family: var(--font-secondary);
+    font-weight: 300;
+}

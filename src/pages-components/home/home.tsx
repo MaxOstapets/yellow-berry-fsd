@@ -1,7 +1,7 @@
 import styles from "./home.module.css"
-import { ShopButton, ProductCard } from "@/shared/ui"
-import { CategoriesList } from "@/entities/ui"
-import { deals } from "./home.data"
+import { ShopButton, ProductCard, Title } from "@/shared/ui"
+import { CategoriesList, Timer, SpecialCard } from "@/entities/ui"
+import { deals, special } from "./home.data"
 
 export const HomePage = () => {
     return (
@@ -25,18 +25,8 @@ export const HomePage = () => {
             </section>
             <section className={styles.deals}>
                 <div className={styles.dealsHat}>
-                    <div className={styles.title}>
-                        <span className={styles.mainText}>Day of the <p className={styles.individualText}>Deal</p></span>
-                        <p className={styles.secondaryText}>Don't wait. The time will never be just right.</p>
-                    </div>
-                    <div className={styles.timer}>
-                        <span>28 days</span>
-                        <span>3 h</span>
-                        <span>:</span>
-                        <span>25 min</span>
-                        <span>:</span>
-                        <span>10 s</span>
-                    </div>
+                    <Title mainText="Day of the" individualText="Deal" secondaryText="Don't wait. The time will never be just right." />
+                    <Timer />
                 </div>
                 <div className={styles.cards}>
                     {deals.map((el) =>
@@ -55,6 +45,17 @@ export const HomePage = () => {
                         />
                     )}
                 </div>
+            </section>
+            <section className={styles.special}>
+                {special.map((el) =>
+                    <SpecialCard
+                        key={el.specialTitle}
+                        src={el.src}
+                        specialTitle={el.specialTitle}
+                        specialSecondaryText={el.specialSecondaryText}
+                        bgColor={el.bgColor}
+                        bgImg={el.bgImg}
+                    />)}
             </section>
         </main>
     )

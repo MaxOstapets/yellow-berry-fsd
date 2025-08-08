@@ -95,3 +95,77 @@
     display: flex;
     gap: 50px;
 }
+
+.discountSection {
+    width: 100%;
+    position: relative;
+}
+
+.discountBgImage {
+    width: 1920px;
+}
+
+.discountDescriptor {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 400px;
+    background: var(--white);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+
+.discountPercent {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.discountTitle {
+    font-family: var(--font-secondary);
+    font-size: 38px;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.newArrivals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.arrivalsHat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.path {
+    display: flex;
+    gap: 6px;
+    font-family: var(--font-primary);
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.currentPath {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.arrivalCards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px;
+}

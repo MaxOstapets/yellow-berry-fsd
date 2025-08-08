@@ -1,7 +1,7 @@
 import styles from "./home.module.css"
 import { ShopButton, ProductCard, Title } from "@/shared/ui"
 import { CategoriesList, Timer, SpecialCard } from "@/entities/ui"
-import { deals, special } from "./home.data"
+import { deals, special, newArrivals } from "./home.data"
 
 export const HomePage = () => {
     return (
@@ -56,6 +56,37 @@ export const HomePage = () => {
                         bgColor={el.bgColor}
                         bgImg={el.bgImg}
                     />)}
+            </section>
+            <section className={styles.discountSection}>
+                <img src="./images/vegetablesBg.svg" alt="discount bg img" className={styles.discountBgImage} />
+                <div className={styles.discountDescriptor}>
+                    <p className={styles.discountPercent}>25% Off</p>
+                    <span className={styles.discountTitle}>Fresh & Organic vegetables</span>
+                    <ShopButton />
+                </div>
+            </section>
+            <section className={styles.newArrivals}>
+                <div className={styles.arrivalsHat}>
+                    <Title mainText="New" individualText="Arrivals" secondaryText="Shop online for new arrivals and get free shipping!" />
+                    <span className={styles.path}>All  /  <p className={styles.currentPath}>Snack & Spices</p>  /  Fruits  /  Vegetables</span>
+                </div>
+                <div className={styles.arrivalCards}>
+                    {newArrivals.map((el) =>
+                        <ProductCard
+                            title={el.title}
+                            specie={el.specie}
+                            freshness={el.freshness}
+                            discount={el.discount}
+                            oldPrice={el.oldPrice}
+                            newPrice={el.newPrice}
+                            src={el.src}
+                            unit={el.unit}
+                            measurement={el.measurement}
+                            key={el.title}
+                            price={el.price}
+                        />
+                    )}
+                </div>
             </section>
         </main>
     )

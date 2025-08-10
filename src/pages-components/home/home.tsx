@@ -1,6 +1,6 @@
 import styles from "./home.module.css"
 import { ShopButton, ProductCard, Title } from "@/shared/ui"
-import { CategoriesList, Timer, SpecialCard } from "@/entities/ui"
+import { CategoriesList, Timer, SpecialCard, MoreInfoList, VendorsList } from "@/entities/ui"
 import { deals, special, newArrivals } from "./home.data"
 
 export const HomePage = () => {
@@ -86,6 +86,21 @@ export const HomePage = () => {
                             price={el.price}
                         />
                     )}
+                </div>
+            </section>
+            <MoreInfoList />
+            <section className={styles.topVenders}>
+                <div className={styles.vendorsDescriptor}>
+                    <span className={styles.vendorsTitle}>Top <p className={styles.vendors}>Vendors</p></span>
+                    <p className={styles.vendorSecondary}>Discover Our Trusted Partners: Excllence & Reliability in Every choice</p>
+                </div>
+                <div className={styles.aboutVendors}>
+                    <div className={styles.vendorsImages}>
+                        <img className={styles.leader} src="./images/gardenWorker.svg" alt="team leader" />
+                        <img className={styles.arrow} src="./images/arrow.png" alt="more info" />
+                        <img className={styles.localShop} src="./images/localShopIcon.png" alt="local shop" />
+                    </div>
+                    <VendorsList />
                 </div>
             </section>
         </main>

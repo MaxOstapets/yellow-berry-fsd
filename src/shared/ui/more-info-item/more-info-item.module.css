@@ -1,0 +1,36 @@
+.moreInfoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 300px;
+    border: 1px solid var(--primary-light);
+    background: var(--white);
+    border-radius: 20px;
+    padding: 36px 0;
+}
+
+.descriptor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 800;
+    flex-wrap: wrap;
+}
+
+.secondaryText {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 300;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 280px
+}

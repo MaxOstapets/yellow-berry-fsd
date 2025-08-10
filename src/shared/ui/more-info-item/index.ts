@@ -1,0 +1,1 @@
+export { MoreInfoItem } from "./more-info-item"

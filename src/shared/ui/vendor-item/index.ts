@@ -1,0 +1,1 @@
+export { VendorItem } from "./vendor-item"

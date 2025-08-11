@@ -1,0 +1,41 @@
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+}
+
+.img {
+    border-radius: 16px;
+}
+
+.descriptor {
+    position: absolute;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+    background: rgba(235, 235, 235, 0.932);
+    color: var(--primary);
+    padding: 12px 12px;
+    border-radius: 16px;
+    top: 69%;
+    left: 1%;
+}
+
+.date {
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.info {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 700;
+}

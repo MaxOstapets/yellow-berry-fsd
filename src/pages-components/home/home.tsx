@@ -1,6 +1,6 @@
 import styles from "./home.module.css"
 import { ShopButton, ProductCard, Title } from "@/shared/ui"
-import { CategoriesList, Timer, SpecialCard, MoreInfoList, VendorsList } from "@/entities/ui"
+import { CategoriesList, Timer, SpecialCard, MoreInfoList, VendorsList, ProductImagesList } from "@/entities/ui"
 import { deals, special, newArrivals } from "./home.data"
 
 export const HomePage = () => {
@@ -103,6 +103,18 @@ export const HomePage = () => {
                     <VendorsList />
                 </div>
             </section>
+            <section className={styles.teamLeaderSection}>
+                <span className={styles.testimonials}>Testimonials</span>
+                <div className={styles.teamLeaderDescriptor}>
+                    <img src="./images/teamLeader.svg" alt="team lead" />
+                    <div className={styles.leaderInfo}>
+                        <span className={styles.leaderName}>Jon Deo</span>
+                        <span className={styles.teamLeader}>(Team Leader)</span>
+                        <span className={styles.aboutLeader}>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut quaerat maiores blanditiis."</span>
+                    </div>
+                </div>
+            </section>
+            <ProductImagesList />
         </main>
     )
 }

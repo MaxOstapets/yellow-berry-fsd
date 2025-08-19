@@ -1,2 +1,1 @@
-export { HomePage } from "./home"
 export { ContactUsPage } from "./contact-us"

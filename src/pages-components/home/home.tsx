@@ -1,6 +1,6 @@
 import styles from "./home.module.css"
 import { ShopButton, ProductCard, Title } from "@/shared/ui"
-import { CategoriesList, Timer, SpecialCard, MoreInfoList, VendorsList, ProductImagesList } from "@/entities/ui"
+import { CategoriesList, Timer, SpecialCard, MoreInfoList, VendorsList, ProductImagesList, InstaImagesList } from "@/entities/ui"
 import { deals, special, newArrivals } from "./home.data"
 
 export const HomePage = () => {
@@ -115,6 +115,7 @@ export const HomePage = () => {
                 </div>
             </section>
             <ProductImagesList />
+            <InstaImagesList />
         </main>
     )
 }

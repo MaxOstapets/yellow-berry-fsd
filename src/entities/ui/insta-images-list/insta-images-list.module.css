@@ -1,0 +1,21 @@
+.images {
+    position: relative;
+}
+
+.insta {
+    position: absolute;
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    padding: 10px 20px;
+    background: var(--white);
+    border-radius: 20px;
+    top: 36%;
+    left: 44.5%;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+}

@@ -1,6 +1,5 @@
 .title {
     display: flex;
-    align-items: start;
     flex-direction: column;
     gap: 4px;
     color: var(--primary);
@@ -21,4 +20,5 @@
 .secondaryText {
     font-family: var(--font-secondary);
     font-weight: 300;
+    text-align: center;
 }

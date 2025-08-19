@@ -14,7 +14,7 @@ export const InstaImagesList = () => {
         <div className={styles.images}>
             <span className={styles.insta}>#INSTA</span>
             <div className={styles.list}>
-                {data.map((el) => <img src={el} alt="inst img" />)}
+                {data.map((el) => <img src={el} alt="inst img" key={el} />)}
             </div>
         </div>
     )

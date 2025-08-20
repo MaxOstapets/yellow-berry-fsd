@@ -1,0 +1,51 @@
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials {
+    font-family: var(--font-secondary);
+    color: var(--white);
+    text-shadow: var(--primary) 0 0 4px;
+    font-size: 40px;
+    transform: rotate(270deg);
+    letter-spacing: 6px;
+    font-weight: 800;
+}
+
+.descriptor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.name {
+    font-family: var(--font-primary);
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.post {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.aboutPerson {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    width: 500px;
+    color: var(--primary);
+    padding: 18px;
+    background: var(--white);
+    border: 1px solid var(--primary-light);
+    border-radius: 20px;
+}

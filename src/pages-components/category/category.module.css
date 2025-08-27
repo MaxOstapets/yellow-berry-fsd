@@ -1,1 +1,55 @@
-.main {}
+.main {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.count {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.pages {
+    display: flex;
+    gap: 10px;
+}
+
+.page {
+    font-family: var(--font-secondary);
+    padding: 6px 10px;
+    color: var(--primary);
+    font-size: 18px;
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.currentPage,
+.next {
+    color: var(--white);
+    border: none;
+    background: var(--primary);
+}

@@ -8,7 +8,7 @@ export const Sidebar = () => {
                 <span className={styles.title}>Category</span>
                 <ul className={styles.checkList}>
                     {category.map((el) =>
-                        <li className={styles.checkItem}>
+                        <li className={styles.checkItem} key={el}>
                             <input type="checkbox" name="categoryCheck" id="categoryCheck" className={styles.checkbox} />
                             <label htmlFor="categoryCheck" className={styles.checkLabel}>{el}</label>
                         </li>
@@ -19,7 +19,7 @@ export const Sidebar = () => {
                 <span className={styles.title}>Weight</span>
                 <ul className={styles.checkList}>
                     {weight.map((el) =>
-                        <li className={styles.checkItem}>
+                        <li className={styles.checkItem} key={el}>
                             <input type="checkbox" name="weightCheck" id="weightCheck" className={styles.checkbox} />
                             <label htmlFor="weightCheck" className={styles.checkLabel}>{el}</label>
                         </li>
@@ -29,7 +29,7 @@ export const Sidebar = () => {
             <section className={`${styles.color} ${styles.section}`}>
                 <span className={styles.title}>Color</span>
                 <ul className={styles.colorsList}>
-                    {colors.map((el) => <li className={styles.colorItem} style={{ background: `${el}` }}></li>)}
+                    {colors.map((el) => <li className={styles.colorItem} style={{ background: `${el}` }} key={el}></li>)}
                 </ul>
             </section>
             <section className={`${styles.price} ${styles.section}`}>
@@ -42,7 +42,7 @@ export const Sidebar = () => {
             <section className={`${styles.tags} ${styles.section}`}>
                 <span className={styles.title}>Tags</span>
                 <ul className={styles.tagsList}>
-                    {tags.map((el) => <li className={styles.tag}>{el}</li>)}
+                    {tags.map((el) => <li className={styles.tag} key={el}>{el}</li>)}
                 </ul>
             </section>
         </div>

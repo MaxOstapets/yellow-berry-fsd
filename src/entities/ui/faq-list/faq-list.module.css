@@ -1,0 +1,41 @@
+.list {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.default {
+    border: 2px solid var(--primary-light);
+    border-radius: 16px;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item,
+.default {
+    width: 100%;
+}
+
+.description {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-family: 300px;
+    color: var(--primary);
+}
+
+.default,
+.description {
+    padding: 18px;
+}

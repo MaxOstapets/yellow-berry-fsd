@@ -14,3 +14,17 @@
 .input:focus {
     outline: 1px solid var(--primary-dark);
 }
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.label {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+}

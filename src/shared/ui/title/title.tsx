@@ -2,7 +2,7 @@ import styles from "./title.module.css"
 
 interface ITitle {
     mainText: string,
-    individualText: string,
+    individualText?: string,
     secondaryText: string,
     alignItems?: string,
     width?: string,
